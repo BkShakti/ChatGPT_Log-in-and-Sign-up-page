@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Welcome back"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please note that phone verification is required for signup. Your number will only be used to verify your identity for security purposes."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="375dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/email_border"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:layout_width="375dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?  "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sign_up2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/msg"
+            android:text="Log in" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:text="   OR   "
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/or"
+            android:background="@color/light_gray" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/or"
+            android:background="@color/light_gray" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="375dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google_icon"
+        android:text="  Continue with Google"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp"
+        app:strokeColor="@color/light_gray"
+        app:strokeWidth="0.7dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="375dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/microsoft_icon"
+        android:text="  Continue with Microsoft"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp"
+        app:strokeColor="@color/light_gray"
+        app:strokeWidth="0.7dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="375dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/apple_icon"
+        android:text="  Continue with Apple"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp"
+        app:strokeColor="@color/light_gray"
+        app:strokeWidth="0.7dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/terms1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:text="Terms of use  |"
+            android:textAlignment="center"
+            android:textColor="@color/light_green"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/privacy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/terms1"
+            android:text="  Privacy policy"
+            android:textAlignment="center"
+            android:textColor="@color/light_green"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
